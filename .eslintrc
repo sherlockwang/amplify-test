@@ -1,0 +1,76 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "plugin:jsx-control-statements/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "jsx-control-statements"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "id-length": [
+      1,
+      {
+        "min": 2,
+        "properties": "always",
+        "exceptions": [
+          "i",
+          "j",
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "lines-between-class-members": [
+      1,
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "react/sort-comp": [
+      1,
+      {
+        "order": [
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "rendering"
+        ],
+        "groups": {
+          "rendering": [
+            "/^render.+$/",
+            "render"
+          ]
+        }
+      }
+    ],
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-no-undef": [2, { "allowGlobals": true }]
+  }
+}

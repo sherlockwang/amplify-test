@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "babel-plugin-named-asset-import",
+      {
+        "loaderMap": {
+          "svg": {
+            "ReactComponent": "@svgr/webpack?-svgo,+titleProp,+ref![path]",
+          }
+        }
+      }
+    ],
+    [
+      "jsx-control-statements"
+    ]
+  ]
+}
