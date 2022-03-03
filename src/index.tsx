@@ -7,6 +7,10 @@ import App from '~/pages'
 import { RootStore, store } from '~/models'
 import { ModelContext } from '~/models/modelContext'
 
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+Amplify.configure(config)
+
 let storeCopy = store
 
 // Global Style
