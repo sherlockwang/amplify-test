@@ -15,7 +15,10 @@
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.3.3",
     "typescript": "^4.1.2",
-    "mst-middlewares": "^5.0.4"
+    "mst-middlewares": "^5.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "cross-env HTTPS=true EXTEND_ESLINT=true FORCE_COLOR=true craco start | cat",
@@ -82,7 +85,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "npm run lint",
+      "npm run prettier",
       "git add"
     ]
   },
